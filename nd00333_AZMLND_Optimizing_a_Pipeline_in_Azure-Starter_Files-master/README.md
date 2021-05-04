@@ -3,10 +3,26 @@
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
+I optimized the parameters using HyperDrive.
+Then, I used Azure AutoML to find an optimal model using the same dataset
 This model is then compared to an Azure AutoML run.
 
+Below are the steps I follow:
+Step 1: Set up the train script, create a Tabular Dataset from this set & evaluate it with the custom-code Scikit-learn logistic regression model.
+
+Step 2: Creation of a Jupyter Notebook and use of HyperDrive to find the best hyperparameters for the logistic regression model.
+
+Step 3: Next, load the same dataset in the Notebook with TabularDatasetFactory and use AutoML to find another optimized model.
+
+Step 4: Finally, compare the results of the two methods and write a research report i.e. this Readme file.
+
+
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+**In 1-2 sentences, explain the problem statement:**
+this is Bank-marketing data, contains data about individuals and features such as their job, marital status, education, if they have loan, etc. it has 21 columns and 10000 rows.
+
+The goal is to predict if a client would subscribe a bank term or not.
+
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
