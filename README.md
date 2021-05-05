@@ -1,3 +1,7 @@
+# Optimizing an ML Pipline in Azure
+
+##Authos: Aven Samareh
+
 ## Summary
 
 this is Bank-marketing data, contains data about individuals and features such as their job, marital status, education, if they have loan, etc. it has 21 columns and 10000 rows.
