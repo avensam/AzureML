@@ -1,9 +1,9 @@
 # AzureML
-# Author: Aven Samareh
+
 
 # Optimizing an ML Pipeline in Azure
  
-
+## Author: Aven Samareh
 ## Summary
 
 this is Bank-marketing data, contains data about individuals and features such as their job, marital status, education, if they have loan, etc. these individuals are appliacant for bank loans.  
@@ -18,7 +18,7 @@ In the Sklearn pipline, I used logisic regression model for classification and u
 
 I chose random sampling to do initial search for different values of hyperparameters. The reason I chose this methods, was because random sampling unlike grid-search doesnt look for specific values and can make full use of the available nodes,I used Bandit policy as a termination policy. Bandit policy, stops the run when the metric of choice is not within slack factor, which results in ignoring runs that are not impacful and saves time and expenses.
 
-
+The best model accuracy was:{'Regularization Strength:': 100.0, 'Max iterations:': 100, 'Accuracy': 0.9176024279210926}
 
 ## AutoML
 
