@@ -17,9 +17,9 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 
 
 ds = TabularDatasetFactory.from_delimited_files(['https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'])
-x_df = ds.to_pandas_dataframe().dropna()
-print(x_df.head())
-print(x_df.dtypes)
+#x_df = ds.to_pandas_dataframe().dropna()
+#print(x_df.head())
+#print(x_df.dtypes)
 
 # TODO: Split data into train and test sets.
 
