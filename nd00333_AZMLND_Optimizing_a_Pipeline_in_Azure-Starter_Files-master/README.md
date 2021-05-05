@@ -56,7 +56,27 @@ In the AutoML:
 The followings are results from the best run:
 The best model selected by autoML was a voting ensemble (~91.8% accurate)
 
-
+ ITERATION   PIPELINE                                       DURATION      METRIC      BEST
+         0   MaxAbsScaler LightGBM                          0:00:51       0.9152    0.9152
+         1   MaxAbsScaler XGBoostClassifier                 0:02:27       0.9159    0.9159
+         2   MaxAbsScaler RandomForest                      0:00:52       0.8919    0.9159
+         3   MaxAbsScaler RandomForest                      0:00:46       0.8877    0.9159
+         4   MaxAbsScaler RandomForest                      0:00:49       0.8030    0.9159
+         5   MaxAbsScaler RandomForest                      0:02:31       0.7943    0.9159
+         6   SparseNormalizer XGBoostClassifier             0:01:00       0.9132    0.9159
+         7   MaxAbsScaler GradientBoosting                  0:02:31       0.9019    0.9159
+         8   StandardScalerWrapper RandomForest             0:00:50       0.8969    0.9159
+         9   MaxAbsScaler LogisticRegression                0:02:31       0.9085    0.9159
+        10   MaxAbsScaler LightGBM                          0:00:48       0.8906    0.9159
+        11   SparseNormalizer XGBoostClassifier             0:00:55       0.9129    0.9159
+        12   MaxAbsScaler ExtremeRandomTrees                0:02:43       0.8877    0.9159
+        13   StandardScalerWrapper LightGBM                 0:00:50       0.8877    0.9159
+        14   SparseNormalizer XGBoostClassifier             0:02:36       0.9131    0.9159
+        15   StandardScalerWrapper ExtremeRandomTrees       0:00:56       0.8877    0.9159
+        16   StandardScalerWrapper LightGBM                 0:00:49       0.8877    0.9159
+        17   StandardScalerWrapper LightGBM                 0:02:31       0.9044    0.9159
+        18    VotingEnsemble                                0:01:06       0.9174    0.9174
+        19    StackEnsemble                                 0:01:15       0.9155    0.9174
 
 ## Pipeline comparison
 
