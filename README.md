@@ -1,6 +1,6 @@
 # Optimizing an ML Pipline in Azure
 
-##Authos: Aven Samareh
+## Authos: Aven Samareh
 
 ## Summary
 
@@ -12,7 +12,7 @@ this is Bank-marketing data, contains data about individuals and features such a
 
 The goal is to predict if a client would subscribe a bank term or not. I applied two different methods to the problem. First we used a Sckiti-learn model; the customized script to fit the data given that the hyperparameters of that model were tuned using HyperDrive. I also, applied an AutoML model and compared these two to see which approach is powerful.The goal is to predict if a client would subscribe a bank term or not.
 
-
+## Scikit-learn Pipline
 
 In the Sklearn pipline, I used logisic regression model for classification and used Hyperdrive to tune the parameters. The parameters we aimed to tune were maximum number of iterations and inverse regularization factor. I hose Accuracy as a metric to compare these different options. 
 
