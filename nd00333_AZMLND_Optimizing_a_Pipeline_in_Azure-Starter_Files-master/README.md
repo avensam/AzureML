@@ -1,4 +1,5 @@
 # Optimizing an ML Pipeline in Azure
+Author: Aven Samareh
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
