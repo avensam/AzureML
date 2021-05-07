@@ -54,8 +54,9 @@ automl_config = AutoMLConfig(
  
 The followings are results from the best run:
 The best model selected by autoML was a voting ensemble (~91.8% accurate)
-for learning more about voting ensemble please see here:https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
-
+for learning more about voting ensemble please see [here](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html)
+You can learn more about how you can automate Hyperparameter tuning [Hyperparameter tuning a model with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters)
+For further reading to evaluate AutoML experiment results, please see [Evaluate automated machine learning experiment results](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml)
 
 ## Pipeline comparison
 
@@ -72,3 +73,4 @@ It is worth trying different preprocessing steps for both models.
 with respect to Hyperdrive, we can narrowdown the hyperparamet search range from random sampling of previously trained model and use them in the grid search as these two methods have no differences with respect to the performance.
 with autoML, we can test and run this model for longer period to reach better performance.
 
+## Proof of cluster clean up
