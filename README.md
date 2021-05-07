@@ -74,5 +74,5 @@ with respect to Hyperdrive, we can narrowdown the hyperparamet search range from
 with autoML, we can test and run this model for longer period to reach better performance.
 
 ## Proof of cluster clean up
-![Diagram2](Images/deleting cluster.PNG "dl cluster")
+![Diagram2](Images/deleting%20cluster.PNG "dl cluster")
 
