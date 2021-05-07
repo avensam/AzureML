@@ -12,7 +12,7 @@ this is Bank-marketing data, contains data about individuals and features such a
 
 The goal is to predict if a client would subscribe a bank term or not. I applied two different methods to the problem. First we used a Sckiti-learn model; the customized script to fit the data given that the hyperparameters of that model were tuned using HyperDrive. I also, applied an AutoML model and compared these two to see which approach is powerful.The goal is to predict if a client would subscribe a bank term or not (Figure 1)
 
-![Diagram](creating-and-optimizing-an-ml-pipeline.png "Main Steps of the Project")
+![Diagram](Images/creating-and-optimizing-an-ml-pipeline.png "Main Steps of the Project")
 
 ## Scikit-learn Pipline
 
