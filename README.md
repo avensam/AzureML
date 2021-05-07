@@ -39,6 +39,7 @@ In the AutoML:
 4. initiate AutoMLconfig and submitted the run to the expermient.
 
 In addition I used the following parameters in AutoML:
+```
 automl_config = AutoMLConfig(
     experiment_timeout_minutes=30,
     task="classification",
@@ -47,6 +48,7 @@ automl_config = AutoMLConfig(
     label_column_name= "y",
     n_cross_validations=4,
     compute_target=compute_target)
+```
     
  Since it was a classifiaction task, the primary metric that was set to 'accuracy'. I chose experiment_timeout_minutes as the exit criterion; that is how long should the experiment run. this is used to avoid failures. I chose the number of  cross validation to be performed as 4 subsests/folds. This number was selected to avoid overfitting.
  
