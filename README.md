@@ -10,7 +10,9 @@ The goal is to predict if a client would subscribe a bank term or not.
 
 this is Bank-marketing data, contains data about individuals and features such as their job, marital status, education, if they have loan, etc. these individuals are appliacant for bank loans.  
 
-The goal is to predict if a client would subscribe a bank term or not. I applied two different methods to the problem. First we used a Sckiti-learn model; the customized script to fit the data given that the hyperparameters of that model were tuned using HyperDrive. I also, applied an AutoML model and compared these two to see which approach is powerful.The goal is to predict if a client would subscribe a bank term or not.
+The goal is to predict if a client would subscribe a bank term or not. I applied two different methods to the problem. First we used a Sckiti-learn model; the customized script to fit the data given that the hyperparameters of that model were tuned using HyperDrive. I also, applied an AutoML model and compared these two to see which approach is powerful.The goal is to predict if a client would subscribe a bank term or not (Figure 1)
+
+![Diagram](img/Diagram.JPG?raw=true "Main Steps of the Project")
 
 ## Scikit-learn Pipline
 
@@ -36,9 +38,21 @@ In the AutoML:
 3. had the the data in TabularDataset
 4. initiate AutoMLconfig and submitted the run to the expermient.
 
+In addition I used the following parameters in AutoML:
+automl_config = AutoMLConfig(
+    experiment_timeout_minutes=30,
+    task="classification",
+    primary_metric="accuracy",
+    training_data= train_data,
+    label_column_name= "y",
+    n_cross_validations=4,
+    compute_target=compute_target)
+    
+ Since it was a classifiaction task, the primary metric that was set to 'accuracy'. I chose experiment_timeout_minutes as the exit criterion; that is how long should the experiment run. this is used to avoid failures. I chose the number of  cross validation to be performed as 4 subsests/folds. This number was selected to avoid overfitting.
+ 
 The followings are results from the best run:
 The best model selected by autoML was a voting ensemble (~91.8% accurate)
-
+for learning more about voting ensemble please see here:https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
 
 ## Pipeline comparison
