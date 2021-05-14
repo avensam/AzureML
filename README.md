@@ -14,6 +14,15 @@ The goal is to predict if a client would subscribe a bank term or not. I applied
 
 ![Diagram](Images/creating-and-optimizing-an-ml-pipeline.png "Main Steps of the Project")
 
+Hyperparameters
+
+In machine learning, a hyperparameter is a parameter whose value cannot be estimated from the data.
+
+Specifically, a hyperparameter is not directly learned through the estimators; therefore, their value must be set by the model developer.
+This means that hyperparameter tuning for optimization is an important part of model training.
+Often cloud platform machine learning services provide methods that allow for automatic hyperparameter tuning for use with model training.
+If the machine learning platform fails to offer an automatic hyperparameter option, one option is to use methods from scikit-learn Python library for hyperparameter tuning. Scikit-learn is a free machine learning Python library that includes methods that help with hyperparameter tuning.
+
 ## Scikit-learn Pipline
 
 In the Sklearn pipline, I used logisic regression model for classification and used Hyperdrive to tune the parameters. The parameters we aimed to tune were maximum number of iterations and inverse regularization factor. I hose Accuracy as a metric to compare these different options. 
